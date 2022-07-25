@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/static/js/main.dd3edecd.js",
+    "static/media/portfolio.png": "/static/media/portfolio.2fbf64cf49e3cc00acaa.png",
+    "static/media/todoApp.png": "/static/media/todoApp.11e0edf7f41a253fe769.png",
+    "static/media/splitterApp.png": "/static/media/splitterApp.e80d52dafab1016de2e9.png",
+    "static/media/Behance-Mark.svg": "/static/media/Behance-Mark.03265d6c004be42e3ffa022c54483ea8.svg",
+    "index.html": "/index.html",
+    "static/media/LinkedIn-Mark.svg": "/static/media/LinkedIn-Mark.338e240431a66e4f3b4626059b966fd2.svg",
+    "static/media/GitHub-Mark.svg": "/static/media/GitHub-Mark.4f4f1c43a650cbc053db367e38031d66.svg",
+    "main.dd3edecd.js.map": "/static/js/main.dd3edecd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.dd3edecd.js"
+  ]
+}
