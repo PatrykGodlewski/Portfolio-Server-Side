@@ -24,7 +24,13 @@ app.listen(PORT);
 
 app.post("/sendmail", (req, res) => {
   const { email, name, content } = req.body;
-  const mailOptions = {
+  if (!email.length || !name.length || !content.length) {
+    res.status(400);
+    res.send();
+    return;
+  }
+
+  const MAIL_OPTIONS = {
     from: "patricjus1@gmail.com",
     to: "pgodlewski099@gmail.com",
     subject: `Portfolio Mail - ${name} - ${email}`,
@@ -35,12 +41,14 @@ app.post("/sendmail", (req, res) => {
     ${content}
     `,
   };
-  transporter.sendMail(mailOptions, function (error, info) {
+  transporter.sendMail(MAIL_OPTIONS, function (error, info) {
     if (error) {
       console.log(error);
+      res.status(500);
     } else {
       console.log("Email sent: " + info.response);
+      res.status(200);
     }
   });
-  res.status(200);
+  res.send();
 });
